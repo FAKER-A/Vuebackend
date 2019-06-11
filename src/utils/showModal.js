@@ -5,7 +5,7 @@ import sureModal from 'Commons/confirm/sure'
 const vue = new Vue()
 
 const ModalList = {
-  sureModal, // 二次验证
+  sureModal // 二次验证
 }
 
 // showModal

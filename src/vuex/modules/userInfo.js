@@ -25,7 +25,7 @@ const actions = {
 }
 const getters = {
   getUserInfo: (state) => {
-    // console.log(state.userInfo, '来自userinfo.js 的getter')
+    console.log(state.userInfo, '来自userinfo.js 的getter')
     return state.userInfo
   }
 }

@@ -82,14 +82,14 @@ export default {
   created () {
     this.getChosen() // 侧边栏
   },
-  beforeRouteEnter (to, from, next) { // exchangeID -> 跳转
-    next(vm => {
-    // 通过 `vm` 访问组件实例
-      if (!vm.currentUserInfo.accountInfo.exchangeId) {
-        vm.$router.push({name: 'Login'})
-      }
-    })
-  },
+  // beforeRouteEnter (to, from, next) { // exchangeID -> 跳转
+  //   next(vm => {
+  //   // 通过 `vm` 访问组件实例
+  //     if (!vm.currentUserInfo.accountInfo.exchangeId) {
+  //       vm.$router.push({name: 'Login'})
+  //     }
+  //   })
+  // },
   methods: {
     getChosen () {
       let name = localStorage.getItem('wx-menu')

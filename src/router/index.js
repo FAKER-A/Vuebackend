@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 // 布局
 const Layout = () => import('@/components/layout')
-const NotFound = () => import('@/components/404')
+const NotFound = () => import('@/components/404/404')
 
 Vue.use(Router)
 
