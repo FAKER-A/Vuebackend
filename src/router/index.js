@@ -12,7 +12,7 @@ export default new Router({
     { // 后台
       path: '/',
       name: 'Index',
-      redirect: 'dashboard',
+      // redirect: 'dashboard',
       meta: { title: '交易所管理后台', requireLogin: true },
       component: Layout,
       children: [ ]
