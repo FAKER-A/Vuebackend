@@ -56,7 +56,10 @@
                 </Sider>
                 <Layout :style="{padding: '0 20px 0px 10px'}">
                     <Content style="min-height:890px;min-width:1200px;">
-                        <router-view ></router-view>
+                        <!-- <router-view ></router-view> -->
+                        <ColorPicker v-model="color1" />
+                        <Button type="primary" @click="setLocalLang('zh_cn')">中文</Button>
+                        <Button type="dashed" @click="setLocalLang('en_us')">英文</Button>
                     </Content>
                 </Layout>
             </Layout>
@@ -71,7 +74,8 @@ export default {
       chosenName: '',
       chosenExpandMenu: [],
       thirdMenu: [],
-      istrue: true
+      istrue: true,
+      color1:''
     }
   },
   computed: {
